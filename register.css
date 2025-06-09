@@ -1,0 +1,253 @@
+.register-body {
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-color: #000000;
+  background-attachment: fixed;
+  height: 90vh;
+  /* animation: fadeInBody 0.3s reverse; */
+}
+
+.bg-image {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(
+    rgba(10, 2, 50, 0.567),
+    rgba(9, 142, 129, 0.5)
+  );
+  animation: 1.5s ease-in-out forwards;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 56px;
+  width: 100%;
+  background-color: rgba(23, 8, 90, 0.8);
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 1px 0;
+    color: black;
+    
+}
+
+.text-nav {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+    position: relative;
+    bottom: 1.2rem;
+}
+.text-nav:hover {
+    color: yellowgreen;
+    transition: color 0.3s ease-in-out;
+}
+
+.container {
+    display: flex;
+    padding: 70px;
+    background-attachment: fixed;
+    background-color: rgba(24, 16, 63, 0.8);;
+    backdrop-filter: blur(11px);
+    height: 529px;
+    right: 29rem;
+    bottom: -3rem;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    animation: slideUp 0.5s forwards;
+
+}
+
+.text-register {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    bottom: 5rem;
+    left: 12rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+    margin-left: 2rem;
+    color : white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.337);
+    padding: 10px;
+    border-radius: 9px;;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    bottom: 5rem;
+    left: 2rem;
+
+}
+
+.input-group:focus-within {
+    background-color: rgba(73, 18, 154, 0.615);
+    box-shadow: 4 13 10px rgba(104, 64, 177, 0.5);
+    transform: scale(1.02);
+ 
+}
+
+.input-group input[type="email"] {
+    width: 100%;
+    padding: 4px 5px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: transparent;
+    border-radius: 4px;
+    /* transition: border-color 1s, box-shadow 0.8s; */
+
+}
+
+.input-group input[type="email"]:focus-within {
+    transform: scale(1.02);
+    animation-fill-mode: forwards;
+    transition: border 3px solid #6840b1 1s, transform 0.3s;
+}
+
+
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 4px 5px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 4px 5px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+    position: relative;
+    bottom: 13rem;
+    left: 2rem;
+}
+/* .form-check-input {
+    display: flex;
+    color: white;
+    position: relative;
+    bottom: 12rem;
+    left: -1rem;
+    align-items: center;
+}
+
+.form-check-label {
+    color: white;
+    font-size: 14px;
+    position: relative;
+    bottom: 13.1rem;
+    left: 5px;
+} */
+
+.button-register {
+    display: flex;
+    position: relative;
+    background-color: #6840b1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    bottom: -1rem;
+    left: 5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-register:hover {
+    background-color: white;
+    color: green;
+    box-shadow: #6840b1;
+    transform: translateY(-2px);
+}
+.login-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    position: relative;
+    bottom: 9rem;
+    left: 5rem;
+}
+
+.social-login {
+    color: white;
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    bottom: 3.6rem;
+    left: 12rem;
+}
+
+.social-icons {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    bottom: 5.6rem;
+    left: 19rem;
+    color: white;
+    color-scheme: light dark;
+}
+
+.text {
+    color: yellow;
+    font-size: 14px;
+}
+
+
+
+
+
+@keyframes fadeInBody {
+    from { opacity: 0; transform: scale(0.95); 
+        animation-timing-function: ease-in;  /* Add easing for smoother transition */
+        animation-fill-mode: forwards; /* Ensure the final state is maintained */
+    }
+    to { opacity: 1; transform: scale(1); 
+        animation-timing-function: ease-out; /* Add easing for smoother transition */
+        animation-fill-mode: forwards; /* Ensure the final state is maintained */
+    }
+}
+
+ @keyframes slideUp {
+      from { transform: translateY(10px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }

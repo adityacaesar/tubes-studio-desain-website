@@ -1,0 +1,27 @@
+{
+  "name": "tubes-studio-desain-website",
+  "version": "1.0.0",
+  "description": "Learn how to build a professional, responsive job posting landing page using HTML, CSS, and JavaScript in this step-by-step tutorial.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityacaesar/tubes-studio-desain-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/adityacaesar/tubes-studio-desain-website/issues"
+  },
+  "homepage": "https://github.com/adityacaesar/tubes-studio-desain-website#readme",
+  "dependencies": {
+    "animejs": "^4.0.2"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
