@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Web Design Mastery | JobHunt</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-DxxPIOEv.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">Adit<span>Jobs</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#job">Jobs</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#client">Client</a></li>
+        <li>
+          <a href="register.html">
+            <button class="btn" a>Register</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <img src="/assets/google-BW6GaD5-.png" alt="header" />
+      <img src="/assets/twitter-DAyp0eyi.png" alt="header" />
+      <img src="/assets/amazon-C3G6LbQV.png" alt="header" />
+      <img src="data:image/png;base64,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" alt="header" />
+      <img src="data:image/png;base64,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" alt="header" />
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIYSURBVHic7d0tTgNRFEDh+24RBLCIVrKCehA14CBhGSTILqOeJdSCRzQ4HCtAIFpRC5j+PAwCEqjsS3rOZ2fEzczJfcmYKbXW+Lw469W6GEWNQUR0Y4cdPj6XTdcv76/rtmZpoUTM1hGTTq6HD1cP0/Jxftqrq8VLlDhuPdw20AP4YZ657metixHl5euX49U6R/m99gWUEYOMHT/z9b8a0c3WQ6gtA4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwC4UivlT6n6ixsAzgDgDADOAOAMAM4A4AwAbu/k7h31IeD15qhsvOFpH/U83ABwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwGRGz1kOomVnWEpPWU6iRUia5WuYwIuatZ9HWzSNzmG+3B9PlKvu1xDg8DghmUco4Op1+nH5MvwAmJUX1KUiHCwAAAABJRU5ErkJggg==" alt="header" />
+      <h2>
+        <img src="/assets/bag-CqyE-sXZ.png" alt="bag" />
+        No.1 Job Hunt Website
+      </h2>
+      <h1>Search, Apply &<br />Get Your <span>Dream Job</span></h1>
+      <p>
+        Your future starts here. Discover countless opportunities, take action
+        by applying to jobs that match your skills and aspirations, and
+        transform your career.
+      </p>
+      <div class="header__btns">
+        <button class="btn">Browse Jobs</button>
+        <a href="#">
+          <span><i class="ri-play-fill"></i></span>
+          How It Works?
+        </a>
+      </div>
+    </header>
+
+    <section class="steps" id="about">
+      <div class="section__container steps__container">
+        <h2 class="section__header">
+          Get Hired in 4 <span>Quick Easy Steps</span>
+        </h2>
+        <p class="section__description">
+          Follow Our Simple, Step-by-Step Guide to Quickly Land Your Dream Job
+          and Start Your New Career Journey.
+        </p>
+        <div class="steps__grid">
+          <div class="steps__card">
+            <span><i class="ri-user-fill"></i></span>
+            <h4>Create an Account</h4>
+            <p>
+              Sign up with just a few clicks to unlock exclusive access to a
+              world of job opportunities and landing your dream job. It's quick,
+              easy, and completely free.
+            </p>
+          </div>
+          <div class="steps__card">
+            <span><i class="ri-search-fill"></i></span>
+            <h4>Search Job</h4>
+            <p>
+              Dive into our job database tailored to match your skills and
+              preferences. With our advanced search filters, finding the perfect
+              job has never been easier.
+            </p>
+          </div>
+          <div class="steps__card">
+            <span><i class="ri-file-paper-fill"></i></span>
+            <h4>Upload CV/Resume</h4>
+            <p>
+              Showcase your experience by uploading your CV or resume. Let
+              employers know why you're the perfect candidate for their job
+              openings.
+            </p>
+          </div>
+          <div class="steps__card">
+            <span><i class="ri-briefcase-fill"></i></span>
+            <h4>Get Job</h4>
+            <p>
+              Take the final step towards your new career. Get ready to embark
+              on your professional journey and secure the job you've been
+              dreaming of.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container explore__container">
+      <h2 class="section__header">
+        <span>Countless Career Options</span> Are Waiting For You To Explore
+      </h2>
+      <p class="section__description">
+        Discover a World of Exciting Opportunities and Endless Possibilities,
+        and Find the Perfect Career Path to Shape Your Future.
+      </p>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-pencil-ruler-2-fill"></i></span>
+          <h4>Design</h4>
+          <p>200+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-bar-chart-box-fill"></i></span>
+          <h4>Sales</h4>
+          <p>350+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-megaphone-fill"></i></span>
+          <h4>Marketing</h4>
+          <p>500+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-wallet-3-fill"></i></span>
+          <h4>Finance</h4>
+          <p>200+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-car-fill"></i></span>
+          <h4>Automobile</h4>
+          <p>250+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-truck-fill"></i></span>
+          <h4>Logistics / Delivery</h4>
+          <p>1k+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-computer-fill"></i></span>
+          <h4>Admin</h4>
+          <p>100+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-building-fill"></i></span>
+          <h4>Construction</h4>
+          <p>500+ jobs openings</p>
+        </div>
+      </div>
+      <div class="explore__btn">
+        <button class="btn">View All Categories</button>
+      </div>
+    </section>
+
+    <section class="section__container job__container" id="job">
+      <h2 class="section__header"><span>Latest & Top</span> Job Openings</h2>
+      <p class="section__description">
+        Discover Exciting New Opportunities and High-Demand Positions Available
+        Now in Top Industries and Companies
+      </p>
+
+      <div class="job__grid">
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="data:image/png;base64,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" alt="job" />
+            <div>
+              <h5>Figma</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>Senior Product Engineer</h4>
+          <p>
+            Lead the development of innovative product solutions, leveraging
+            your expertise in engineering and product management to drive
+            success.
+          </p>
+          <div class="job__card__footer">
+            <span>12 Positions</span>
+            <span>Full Time</span>
+            <span>$1,45,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="/assets/google-BW6GaD5-.png" alt="job" />
+            <div>
+              <h5>Google</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>Project Manager</h4>
+          <p>
+            Manage project timelines and budgets to ensure successful delivery
+            of projects on schedule, while maintaining clear communication with
+            stakeholders.
+          </p>
+          <div class="job__card__footer">
+            <span>2 Positions</span>
+            <span>Full Time</span>
+            <span>$95,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="data:image/png;base64,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" alt="job" />
+            <div>
+              <h5>LinkedIn</h5>
+              <h6>Germany</h6>
+            </div>
+          </div>
+          <h4>Full Stack Developer</h4>
+          <p>
+            Develop and maintain both front-end and back-end components of web
+            applications, utilizing a wide range of programming languages and
+            frameworks.
+          </p>
+          <div class="job__card__footer">
+            <span>10 Positions</span>
+            <span>Full Time</span>
+            <span>$35,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="/assets/amazon-C3G6LbQV.png" alt="job" />
+            <div>
+              <h5>Amazon</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>Front-end Developer</h4>
+          <p>
+            Design and implement user interfaces using HTML, CSS, and
+            JavaScript, collaborating closely with designers and back-end
+            developers.
+          </p>
+          <div class="job__card__footer">
+            <span>20 Positions</span>
+            <span>Full Time</span>
+            <span>$1,01,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="/assets/twitter-DAyp0eyi.png" alt="job" />
+            <div>
+              <h5>Twitter</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>ReactJS Developer</h4>
+          <p>
+            Specialize in building dynamic and interactive user interfaces using
+            the ReactJS library, leveraging your expertise in JavaScript and
+            front-end development.
+          </p>
+          <div class="job__card__footer">
+            <span>6 Positions</span>
+            <span>Full Time</span>
+            <span>$98,000/Year</span>
+          </div>
+        </div>
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIYSURBVHic7d0tTgNRFEDh+24RBLCIVrKCehA14CBhGSTILqOeJdSCRzQ4HCtAIFpRC5j+PAwCEqjsS3rOZ2fEzczJfcmYKbXW+Lw469W6GEWNQUR0Y4cdPj6XTdcv76/rtmZpoUTM1hGTTq6HD1cP0/Jxftqrq8VLlDhuPdw20AP4YZ657metixHl5euX49U6R/m99gWUEYOMHT/z9b8a0c3WQ6gtA4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwA4A4AzADgDgDMAOAOAMwC4UivlT6n6ixsAzgDgDADOAOAMAM4A4AwAbu/k7h31IeD15qhsvOFpH/U83ABwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwBgBnAHAGAGcAcAYAZwBwGRGz1kOomVnWEpPWU6iRUia5WuYwIuatZ9HWzSNzmG+3B9PlKvu1xDg8DghmUco4Op1+nH5MvwAmJUX1KUiHCwAAAABJRU5ErkJggg==" alt="job" />
+            <div>
+              <h5>Microsoft</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>Python Developer</h4>
+          <p>
+            Develop scalable and efficient backend systems and applications
+            using Python, utilizing your proficiency in Python programming and
+            software development.
+          </p>
+          <div class="job__card__footer">
+            <span>9 Positions</span>
+            <span>Full Time</span>
+            <span>$80,000/Year</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container offer__container" id="service">
+      <h2 class="section__header">What We <span>Offer</span></h2>
+      <p class="section__description">
+        Explore the Benefits and Services We Provide to Enhance Your Job Search
+        and Career Success
+      </p>
+      <div class="offer__grid">
+        <div class="offer__card">
+          <img src="/assets/offer-1-Djc5smiy.jpg" alt="offer" />
+          <div class="offer__details">
+            <span>01</span>
+            <div>
+              <h4>Job Recommendation</h4>
+              <p>
+                Personalized job matches tailored to your skills and preferences
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img src="/assets/offer-2-DPAlyr05.jpg" alt="offer" />
+          <div class="offer__details">
+            <span>02</span>
+            <div>
+              <h4>Create & Build Portfolio</h4>
+              <p>Showcase your expertise with professional portfolio design</p>
+            </div>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img src="/assets/offer-3-D2RsA4Pp.jpg" alt="offer" />
+          <div class="offer__details">
+            <span>03</span>
+            <div>
+              <h4>Career Consultation</h4>
+              <p>Receive expert advice to navigate your career path</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">What Our <span>Client Say</span></h2>
+      <p class="section__description">
+        Read Testimonials and Success Stories from Our Satisfied Job Seekers and
+        Employers to See How We Make a Difference
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="/assets/client-1-DkslZGpb.jpg" alt="client" />
+              <p>
+                Searching for a job can be overwhelming, but this platform made
+                it simple and efficient. I uploaded my resume, applied to a few
+                positions, and soon enough, I was hired! Thank you for helping
+                me kickstart my career!
+              </p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <h4>Sarah Patel</h4>
+              <h5>Graphic Designer</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="/assets/client-2-C-3zz6Pi.jpg" alt="client" />
+              <p>
+                As a recent graduate, I was unsure where to start my job search.
+                This website guided me through the process step by step. From
+                creating my profile to receiving job offers, everything was
+                seamless. I'm now happily employed thanks to this platform!
+              </p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+              </div>
+              <h4>Michael Brown</h4>
+              <h5>Recent Graduate</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="/assets/client-3-BHsTleqB.jpg" alt="client" />
+              <p>
+                Creating an account was a breeze, and I was amazed by the number
+                of job opportunities available. Thanks to this website, I found
+                the perfect position that aligned perfectly with my career
+                goals.
+              </p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <h4>David Smith</h4>
+              <h5>Software Engineer</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">Job<span>Hunt</span></a>
+          </div>
+          <p>
+            Our platform is designed to help you find the perfect job and
+            achieve your professional dreams.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Follow Us</h4>
+          <ul class="footer__links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91 234 56788
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> 123 Main Street,
+                Anytown, USA
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

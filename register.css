@@ -1,12 +1,27 @@
 .register-body {
   display: flex;
   justify-content: center;
-  background-size: cover;
-  background-position: center;
-  background-color: #000000;
   background-attachment: fixed;
-  height: 90vh;
-  /* animation: fadeInBody 0.3s reverse; */
+  overflow-x: hidden;
+}
+
+
+.logo {
+    position: fixed;
+    display: inline-block;
+    padding: 4px 8px; 
+    height: auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+    top: 11px;
+    color: #5d00ff;
+    left: 20px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #fa6021;
+    text-decoration: none;
 }
 
 .bg-image {
@@ -17,60 +32,61 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(
-    rgba(10, 2, 50, 0.567),
-    rgba(9, 142, 129, 0.5)
-  );
-  animation: 1.5s ease-in-out forwards;
 }
 
 .navbar {
   position: fixed;
+  display: flex;
   top: 0;
   height: 56px;
   width: 100%;
-  background-color: rgba(23, 8, 90, 0.8);
+  background-color: rgba(49, 7, 123, 0.348);
   backdrop-filter: blur(10px);
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 1px 0;
-    color: black;
-    
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .text-nav {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: white;
     margin-right: 20px;
     position: relative;
-    bottom: 1.2rem;
+    bottom: -0.2rem;
+    left: 7rem;
+    text-decoration: none;
 }
 .text-nav:hover {
     color: yellowgreen;
     transition: color 0.3s ease-in-out;
+    text-decoration: underline;
 }
 
 .container {
     display: flex;
-    padding: 70px;
+    padding: 60px;
     background-attachment: fixed;
     background-color: rgba(24, 16, 63, 0.8);;
-    backdrop-filter: blur(11px);
-    height: 529px;
-    right: 29rem;
+    backdrop-filter: blur(5px);
+    height: 470px;
+    right: 0rem;
     bottom: -3rem;
     position: relative;
     flex-direction: column;
     align-items: center;
     animation: slideUp 0.5s forwards;
-
+    /* border-top: #00ff77;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-bottom-color: #00ff77;
+    border-bottom-style: solid; */
+    border-radius: 21px;
+     box-shadow: 2px 2px 20px rgba(162, 0, 255, 0.5), 2px 2px 20px rgba(0, 191, 255, 0.5);
+    top: 4rem;
+}
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(8, 33, 101, 0.5), 0 0 40px rgba(0, 191, 255, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .text-register {
@@ -79,8 +95,8 @@
     margin-bottom: 20px;
     color: white;
     position: relative;
-    bottom: 5rem;
-    left: 12rem;
+    bottom: 4rem;
+    left: 11rem;
 }
 
 .input-group {
@@ -95,13 +111,13 @@
     padding: 10px;
     border-radius: 9px;;
     /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-    bottom: 5rem;
+    bottom: 4rem;
     left: 2rem;
 
 }
 
 .input-group:focus-within {
-    background-color: rgba(73, 18, 154, 0.615);
+    background-color: rgba(48, 4, 76, 0.615);
     box-shadow: 4 13 10px rgba(104, 64, 177, 0.5);
     transform: scale(1.02);
  
@@ -156,7 +172,7 @@
     margin-bottom: 10px;
     color: white;
     position: relative;
-    bottom: 13rem;
+    bottom: 10rem;
     left: 2rem;
 }
 /* .form-check-input {
@@ -204,7 +220,7 @@
     font-size: 14px;
     margin-top: 10px;
     position: relative;
-    bottom: 9rem;
+    bottom: 8rem;
     left: 5rem;
 }
 
@@ -247,7 +263,71 @@
     }
 }
 
- @keyframes slideUp {
-      from { transform: translateY(10px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
+@keyframes slideUp {
+    from { transform: translateY(1px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    width: 90%;
+    height: auto;
+    top: 4rem;
+  }
+
+  .text-register {
+    left: 0;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .input-group {
+    width: 100%;
+    margin: 10px 0;
+    left: 0;
+  }
+
+  .form-check {
+    flex-direction: row;
+    bottom: 1rem;
+    left: 0;
+  }
+
+  .button-register {
+    left: 0;
+    align-self: center;
+  }
+
+  .login-link {
+    bottom: 3rem;
+    left: 0;
+    text-align: center;
+  }
+
+  .social-login {
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    bottom: 1rem;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+    bottom: 2rem;
+  }
+
+  .text-nav {
+    font-size: 16px;
+    left: 2rem;
+    bottom: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    left: 10px;
+    top: 10px;
+  }
+}
