@@ -51,8 +51,8 @@
     color: white;
     margin-right: 20px;
     position: relative;
-    bottom: -0.2rem;
-    left: 7rem;
+    bottom: -1.2rem;
+    left: 9.5rem;
     text-decoration: none;
 }
 .text-nav:hover {
@@ -73,15 +73,10 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    animation: slideUp 0.5s forwards;
-    /* border-top: #00ff77;
-    border-top-style: solid;
-    border-top-width: 4px;
-    border-bottom-color: #00ff77;
-    border-bottom-style: solid; */
     border-radius: 21px;
-     box-shadow: 2px 2px 20px rgba(162, 0, 255, 0.5), 2px 2px 20px rgba(0, 191, 255, 0.5);
+    box-shadow: 2px 2px 20px rgba(162, 0, 255, 0.5), 2px 2px 20px rgba(0, 191, 255, 0.5);
     top: 4rem;
+    animation: slideUp 0.5s forwards;
 }
 .container:hover {
     transform: scale(1.02);
@@ -175,22 +170,6 @@
     bottom: 10rem;
     left: 2rem;
 }
-/* .form-check-input {
-    display: flex;
-    color: white;
-    position: relative;
-    bottom: 12rem;
-    left: -1rem;
-    align-items: center;
-}
-
-.form-check-label {
-    color: white;
-    font-size: 14px;
-    position: relative;
-    bottom: 13.1rem;
-    left: 5px;
-} */
 
 .button-register {
     display: flex;
@@ -248,18 +227,14 @@
     font-size: 14px;
 }
 
-
-
-
-
 @keyframes fadeInBody {
     from { opacity: 0; transform: scale(0.95); 
-        animation-timing-function: ease-in;  /* Add easing for smoother transition */
-        animation-fill-mode: forwards; /* Ensure the final state is maintained */
+        animation-timing-function: ease-in;  
+        animation-fill-mode: forwards; 
     }
     to { opacity: 1; transform: scale(1); 
-        animation-timing-function: ease-out; /* Add easing for smoother transition */
-        animation-fill-mode: forwards; /* Ensure the final state is maintained */
+        animation-timing-function: ease-out; 
+        animation-fill-mode: forwards; 
     }
 }
 
